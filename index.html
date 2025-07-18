@@ -1,21 +1,5 @@
 
-
-    <h2>SANTOS </h2>
-    <p>21 anos</p>
-    <p>Bahia / SP</p>
-
-    <button class="btn-whatsapp" onclick="redirecionarWhatsApp()">Falar no WhatsApp</button>
-  </div>
-
-  <script>
-    const numerosWhatsApp = [
-      '557391312463',  // Número secundário
-      '557391352960', //  Número primeiro 
-    ];
-
-    function redirecionarWhatsApp() {
-      const index = Math.floor(Math.random() * numerosWhatsApp.length);
-      const numero = numerosWhatsApp[index];
+ro = numerosWhatsApp[index];
       const mensagem = encodeURIComponent("Oi Lais, tenho interesse!");
       const link = https://wa.me/${numero}?text=${mensagem};
       window.location.href = link;
